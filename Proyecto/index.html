@@ -7,213 +7,231 @@
 
     <title>EduIT - Desarrollo Web con HTML : Com. : #74375</title>
 
+    <link rel="stylesheet" href="./styles.css" />
+
 </head>
 
 <body>
     <!-- Comienzo Header -->
-    <header>
-        <nav>
-            <figure>
-                <img src="./assets/logo.svg" alt="Logo SunnySide">
+    <header class="Header">
+        <nav class="navbar">
+            <figure class="logo">
+                <img class="logo__img" src="./assets/logo.svg" alt="Logo SunnySide">
             </figure>
-            <menu>
-                <li>
-                    <a href="#URI--About">
+            <menu class="menu">
+                <li class="menu__item">
+                    <a class="menu__item--link" href="#URI--About">
                         About
                     </a>
                 </li>
-                <li>
-                    <a href="#URI--Services">
+                <li class="menu__item">
+                    <a class="menu__item--linkref=" #URI--Services">
                         Services
                     </a>
                 </li>
-                <li>
-                    <a href="#URI--Project">
+                <li class="menu__item">
+                    <a class="menu__item--link" ref="#URI--Project">
                         Project
                     </a>
                 </li>
             </menu>
-            <button>
+            <button class="btn--action">
                 Contact
             </button>
         </nav>
-        <div>
+        <div class="Hero">
             <!-- Descripcion imagen Header : The image shows a close-up view of a sliced orange in a glass bowl against a bright blue background. The orange slice is vibrant and juicy, with the distinctive segments and interior texture of an orange visible. The glass bowl provides a clean, minimalist frame for the fruit. The bold, contrasting colors of the orange and the blue background create a visually striking and visually appealing image. -->
-            <h1>We are creatives</h1>
-            <figure>
-                <img src="./assets/icon-arrow-down.svg" alt="Flecha apuntando hacia abajo">
+            <h1 class="Hero__title">We are creatives</h1>
+            <figure clas="Hero__figure">
+                <img class="Hero__figure--img" src="./assets/icon-arrow-down.svg" alt="Flecha apuntando hacia abajo">
             </figure>
         </div>
     </header>
     <!-- Fin Header -->
     <!-- Comienzo Aside -->
-    <aside>
-        <section>
-            <article></article>
+    <aside class="Aside">
+        <section class="section">
+            <article class="article"></article>
         </section>
     </aside>
     <!-- Fin Aside -->
     <!-- Comienzo Main -->
-    <main>
-        <section>
-            <article id="#URI--About"></article>
-                <div>
-                    <h2>Transform your brand</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse accusamus ea
-                        repellat reiciendis commodi voluptas, architecto aliquam delectus? Porro nostrum iste
-                        accusantium nesciunt unde magni officiis ratione aperiam aliquid?
-                    </p>
-                    <a href="">
-                        Learn more
-                    </a>
-                </div>
-                <picture>
-                    <img src="./assets/desktop/image-transform.jpg" alt="The image shows a single white egg against a bright yellow background. The egg is centered in the frame and is the sole focus of the image, creating a minimalistic and visually striking composition.">
-                </picture>
+    <main class="Main">
+        <section class="" section">
+            <article class="article" id="#URI--About"></article>
+            <div class="container">
+                <h2 class="title">Transform your brand</h2>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse accusamus ea
+                    repellat reiciendis commodi voluptas, architecto aliquam delectus? Porro nostrum iste
+                    accusantium nesciunt unde magni officiis ratione aperiam aliquid?
+                </p>
+                <a href="link">
+                    Learn more
+                </a>
+            </div>
+            <picture class="picture">
+                <img class="picture__img" src="./assets/desktop/image-transform.jpg"
+                    alt="The image shows a single white egg against a bright yellow background. The egg is centered in the frame and is the sole focus of the image, creating a minimalistic and visually striking composition.">
+            </picture>
             </article>
         </section>
-        <section>
-            <article>
-                <picture>
-                    <img src="./assets/desktop/image-stand-out.jpg" alt="The image shows a tall white drinking glass or cup placed against a vibrant coral or peach colored background. The clean, minimalist design of the glass contrasts beautifully with the bold, warm hue of the background, creating a visually striking and modern composition.">
+        <section class="section">
+            <article class="article">
+                <picture class="picture">
+                    <img class="picture__img" src="./assets/desktop/image-stand-out.jpg"
+                        alt="The image shows a tall white drinking glass or cup placed against a vibrant coral or peach colored background. The clean, minimalist design of the glass contrasts beautifully with the bold, warm hue of the background, creating a visually striking and modern composition.">
                 </picture>
-                <div>
-                    <h2>Stand out the right audience</h2>
-                    <p>
+                <div class="container">
+                    <h2 class="title">Stand out the right audience</h2>
+                    <p class="paragraph">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus quam est ad
                         nobis mollitia repellendus fuga nihil, at libero! Nam non quia odit autem in quisquam totam
                         dolore a.
                     </p>
-                    <a href="">
+                    <a class="link" href="">
                         Learn more
                     </a>
                 </div>
             </article>
         </section>
-        <section>
-            <article id="#URI--Project">
-                <h3>Graphic Design</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi omnis nulla laborum quos,
-                    tenetur quisquam est dignissimos at quibusdam exercitationem doloribus tempora aut voluptate itaque
-                    obcaecati. Odit, magni beatae!
-                </p>
+        <section class="section">
+            <article class="article" id="#URI--Project">
+                <div class="container">
+                    <h3 class="title">Graphic Design</h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi omnis nulla laborum quos,
+                        tenetur quisquam est dignissimos at quibusdam exercitationem doloribus tempora aut voluptate itaque
+                        obcaecati. Odit, magni beatae!
+                    </p>
+                </div>
             </article>
-            <article>
-                <h3>Photography</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi omnis nulla laborum quos,
-                    tenetur quisquam est dignissimos at quibusdam exercitationem doloribus tempora aut voluptate itaque
-                    obcaecati. Odit, magni beatae!
-                </p>
-            </article>
-        </section>
-        <section>
-            <article>
-                <h4>Testimonials</h4>
-                <div>
-                    <!-- TODO: Agregar Cards  -->
-                    <dl>
-                        <figure>
-                            <img src="./assets/image-emily.jpg" alt="Imagen de una persona">
-                        </figure>
-                        <dd>
-                            Lorem 5ipsum dolor sit amet consectetur adipisicing elit. Ducimus nesciunt eius assumenda eveniet eum optio consequuntur laborum quaerat obcaecati quam doloremque tempore, illo vero, atque rem repellendus non reiciendis necessitatibus!
-                        </dd>
-                    </dl>
-                    <dt>
-                        <span>Emily R.</span>
-                        <span>Cargo</span>
-                    </dt>
-                    <dl>
-                        <figure>
-                            <img src="./assets/image-thomas.jpg" alt="Imagen de una persona">
-                        </figure>
-                        <dd>
-                            Lorem 5ipsum dolor sit amet consectetur adipisicing elit. Ducimus nesciunt eius assumenda eveniet eum optio consequuntur laborum quaerat obcaecati quam doloremque tempore, illo vero, atque rem repellendus non reiciendis necessitatibus!
-                        </dd>
-                    </dl>
-                    <dt>
-                        <span>Thomas S.</span>
-                        <span>Cargo</span>
-                    </dt>                    <dl>
-                        <figure>
-                            <img src="./assets/image-jennie.jpg" alt="Imagen de una persona">
-                        </figure>
-                        <dd>
-                            Lorem 5ipsum dolor sit amet consectetur adipisicing elit. Ducimus nesciunt eius assumenda eveniet eum optio consequuntur laborum quaerat obcaecati quam doloremque tempore, illo vero, atque rem repellendus non reiciendis necessitatibus!
-                        </dd>
-                    </dl>
-                    <dt>
-                        <span>Jennie R.</span>
-                        <span>Cargo</span>
-                    </dt>
+            <article class="article">
+                <div class="container">
+                    <h3 class="title">Photography</h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi omnis nulla laborum quos,
+                        tenetur quisquam est dignissimos at quibusdam exercitationem doloribus tempora aut voluptate itaque
+                        obcaecati. Odit, magni beatae!
+                    </p>
                 </div>
             </article>
         </section>
-        <figure>
-            <img src="./assets/desktop/image-gallery-milkbottles.jpg" alt="">
-            <img src="./assets/desktop/image-gallery-orange.jpg" alt="">
-            <img src="./assets/desktop/image-gallery-cone.jpg" alt="">
-            <img src="./assets/desktop/image-gallery-sugarcubes.jpg" alt="">
+        <section class="section">
+            <article class="article">
+                <h4 class="title">Testimonials</h4>
+                <div class="container">
+                    <dl class="card">
+                        <figure class="card__avatar">
+                            <img class="card__avatar--img" src="./assets/image-emily.jpg" alt="Imagen de una persona">
+                        </figure>
+                        <dd class="card__paragraph">
+                            Lorem 5ipsum dolor sit amet consectetur adipisicing elit. Ducimus nesciunt eius assumenda
+                            eveniet eum optio consequuntur laborum quaerat obcaecati quam doloremque tempore, illo vero,
+                            atque rem repellendus non reiciendis necessitatibus!
+                        </dd>
+                        <dt class="card__person">
+                            <span class="card__person--name">Emily R.</span>
+                            <span class="card__person--job">Cargo</span>
+                        </dt>
+                    </dl>
+                    <dl class="card">
+                        <figure class="card__avatar">
+                            <img class="card__avatar--imgsrc=" ./assets/image-thomas.jpg" alt="Imagen de una persona">
+                        </figure>
+                        <dd class="card__paragraph">
+                            Lorem 5ipsum dolor sit amet consectetur adipisicing elit. Ducimus nesciunt eius assumenda
+                            eveniet eum optio consequuntur laborum quaerat obcaecati quam doloremque tempore, illo vero,
+                            atque rem repellendus non reiciendis necessitatibus!
+                        </dd>
+                        <dt class="card__person">
+                            <span class="card__person--name">Thomas S.</span>
+                            <span class="card__person--job">Cargo</span>
+                        </dt>
+                    </dl>
+                    <dl class="card">
+                        <figure class="card__avatar">
+                            <img class="card__avatar--img" src="./assets/image-jennie.jpg" alt="Imagen de una persona">
+                        </figure>
+                        <dd class="card__paragraph">
+                            Lorem 5ipsum dolor sit amet consectetur adipisicing elit. Ducimus nesciunt eius assumenda
+                            eveniet eum optio consequuntur laborum quaerat obcaecati quam doloremque tempore, illo vero,
+                            atque rem repellendus non reiciendis necessitatibus!
+                        </dd>
+                        <dt class="card__person">
+                            <span class="card__person--job" >Jennie R.</span>
+                            <span class="card__person--name" >Cargo</span>
+                        </dt>
+                    </dl>
+                </div>
+            </article>
+        </section>
+        <figure class="gallery">
+            <img class="gallery--img" src="./assets/desktop/image-gallery-milkbottles.jpg" alt="">
+            <img class="gallery--img" src="./assets/desktop/image-gallery-orange.jpg" alt="">
+            <img class="gallery--img" src="./assets/desktop/image-gallery-cone.jpg" alt="">
+            <img class="gallery--img" src="./assets/desktop/image-gallery-sugarcubes.jpg" alt="">
         </figure>
     </main>
     <!-- Fin Main -->
     <!-- Comienzo Footer -->
-    <footer id="#URI--Services" >
-        <figure>
-            <img src="./assets/logo.svg" alt="">
+    <footer class="Footer" id="#URI--Services">
+        <figure class="logo">
+            <img class="logo__img" src="./assets/logo.svg" alt="">
         </figure>
-        <section>
-            <article>
-                <ul>
-                    <li>
-                        <a href="#URI--About">
-                            About
+        <section class="section" >
+            <article class="article">
+                <ul class="menu">
+                    <li class="menu__item
+                        <a class=" menu__item--link" ref="#URI--About">
+                        About
                         </a>
                     </li>
-                    <li>
-                        <a href="#URI--Services">
+                    <li class="menu__item">
+                        <a class="menu__item--link" ref="#URI--Services">
                             Services
                         </a>
                     </li>
-                    <li>
-                        <a href="URI--Project">
+                    <li class="menu__item">
+                        <a class="menu__item--link" href="URI--Project">
                             Project
                         </a>
                     </li>
                 </ul>
             </article>
         </section>
-        <section>
-            <article>
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank" >
-                            <figure>
-                                <img src="./assets/icon-facebook.svg" alt="Logo red social : Facebook. Seguinos en Facebook!">
+        <section class="section" >
+            <article class="article" >
+                <ul class="menu" >
+                    <li class="menu__item">
+                        <a class="menu__item--link" href="https://www.facebook.com/" target="_blank">
+                            <figure class="figure" >
+                                <img class="figure--img" src="./assets/icon-facebook.svg"
+                                    alt="Logo red social : Facebook. Seguinos en Facebook!">
                             </figure>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <figure>
-                                <img src="./assets/icon-instagram.svg" alt="Logo red social : Instagram. Seguinos en Instagram">
+                    <li class="menu__item">
+                        <a class="menu__item--link" ref="https://www.instagram.com/" target="_blank">
+                            <figure class="figure" >
+                                <img class="figure--img" src="./assets/icon-instagram.svg"
+                                    alt="Logo red social : Instagram. Seguinos en Instagram">
                             </figure>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.twitter.com/" target="_blank">
-                            <figure>
-                                <img src="./assets/icon-twitter.svg" alt="Logo red social : Twitter. Seguinos en Twitter!">
+                    <li class="menu__item" >
+                        <a class="menu__item--link" href="https://www.twitter.com/" target="_blank">
+                            <figure class="figure" >
+                                <img class="figure--img" src="./assets/icon-twitter.svg"
+                                    alt="Logo red social : Twitter. Seguinos en Twitter!">
                             </figure>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.pinterest.com/" target="_blank">
+                    <li class="menu__item" >
+                        <a class="menu__item--link" href="https://www.pinterest.com/" target="_blank">
                             <figure>
-                                <img src="./assets/icon-pinterest.svg" alt="Logo red social : Pinterest. Seguinos en Pinterest!">
+                                <img class="figure--img" src="./assets/icon-pinterest.svg"
+                                    alt="Logo red social : Pinterest. Seguinos en Pinterest!">
                             </figure>
                         </a>
                     </li>
