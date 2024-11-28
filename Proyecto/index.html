@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body class="Body">
     <!-- Comienzo Header -->
     <header class="Header">
         <nav class="navbar">
@@ -25,12 +25,12 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item--linkref=" #URI--Services">
+                    <a class="menu__item--link" href="#URI--Services">
                         Services
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item--link" ref="#URI--Project">
+                    <a class="menu__item--link" href="#URI--Project">
                         Project
                     </a>
                 </li>
@@ -57,26 +57,25 @@
     <!-- Fin Aside -->
     <!-- Comienzo Main -->
     <main class="Main">
-        <section class="" section">
-            <article class="article" id="#URI--About"></article>
-            <div class="container">
-                <h2 class="title">Transform your brand</h2>
-                <p class="paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse accusamus ea
-                    repellat reiciendis commodi voluptas, architecto aliquam delectus? Porro nostrum iste
-                    accusantium nesciunt unde magni officiis ratione aperiam aliquid?
-                </p>
-                <a href="link">
-                    Learn more
-                </a>
-            </div>
-            <picture class="picture">
-                <img class="picture__img" src="./assets/desktop/image-transform.jpg"
-                    alt="The image shows a single white egg against a bright yellow background. The egg is centered in the frame and is the sole focus of the image, creating a minimalistic and visually striking composition.">
-            </picture>
-            </article>
-        </section>
         <section class="section">
+            <article class="article" id="#URI--About">
+                <div class="container">
+                    <h2 class="title">Transform your brand</h2>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse accusamus ea
+                        repellat reiciendis commodi voluptas, architecto aliquam delectus? Porro nostrum iste
+                        accusantium nesciunt unde magni officiis ratione aperiam aliquid?
+                    </p>
+                    <a href="link">
+                        Learn more
+                    </a>
+                </div>
+                <picture class="picture">
+                    <img class="picture__img" src="./assets/desktop/image-transform.jpg"
+                        alt="The image shows a single white egg against a bright yellow background. The egg is centered in the frame and is the sole focus of the image, creating a minimalistic and visually striking composition.">
+                </picture>
+            </article>
+
             <article class="article">
                 <picture class="picture">
                     <img class="picture__img" src="./assets/desktop/image-stand-out.jpg"
@@ -100,8 +99,10 @@
                 <div class="container">
                     <h3 class="title">Graphic Design</h3>
                     <p class="paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi omnis nulla laborum quos,
-                        tenetur quisquam est dignissimos at quibusdam exercitationem doloribus tempora aut voluptate itaque
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi omnis nulla laborum
+                        quos,
+                        tenetur quisquam est dignissimos at quibusdam exercitationem doloribus tempora aut voluptate
+                        itaque
                         obcaecati. Odit, magni beatae!
                     </p>
                 </div>
@@ -110,8 +111,10 @@
                 <div class="container">
                     <h3 class="title">Photography</h3>
                     <p class="paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi omnis nulla laborum quos,
-                        tenetur quisquam est dignissimos at quibusdam exercitationem doloribus tempora aut voluptate itaque
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi omnis nulla laborum
+                        quos,
+                        tenetur quisquam est dignissimos at quibusdam exercitationem doloribus tempora aut voluptate
+                        itaque
                         obcaecati. Odit, magni beatae!
                     </p>
                 </div>
@@ -137,7 +140,7 @@
                     </dl>
                     <dl class="card">
                         <figure class="card__avatar">
-                            <img class="card__avatar--imgsrc=" ./assets/image-thomas.jpg" alt="Imagen de una persona">
+                            <img class="card__avatar--img" src="./assets/image-thomas.jpg" alt="Imagen de una persona">
                         </figure>
                         <dd class="card__paragraph">
                             Lorem 5ipsum dolor sit amet consectetur adipisicing elit. Ducimus nesciunt eius assumenda
@@ -159,18 +162,18 @@
                             atque rem repellendus non reiciendis necessitatibus!
                         </dd>
                         <dt class="card__person">
-                            <span class="card__person--job" >Jennie R.</span>
-                            <span class="card__person--name" >Cargo</span>
+                            <span class="card__person--job">Jennie R.</span>
+                            <span class="card__person--name">Cargo</span>
                         </dt>
                     </dl>
                 </div>
             </article>
         </section>
         <figure class="gallery">
-            <img class="gallery--img" src="./assets/desktop/image-gallery-milkbottles.jpg" alt="">
-            <img class="gallery--img" src="./assets/desktop/image-gallery-orange.jpg" alt="">
-            <img class="gallery--img" src="./assets/desktop/image-gallery-cone.jpg" alt="">
-            <img class="gallery--img" src="./assets/desktop/image-gallery-sugarcubes.jpg" alt="">
+            <img class="gallery--img" width="700px" src="./assets/desktop/image-gallery-milkbottles.jpg" alt="">
+            <img class="gallery--img" width="700px" src="./assets/desktop/image-gallery-orange.jpg" alt="">
+            <img class="gallery--img" width="700px" src="./assets/desktop/image-gallery-cone.jpg" alt="">
+            <img class="gallery--img" width="700px" src="./assets/desktop/image-gallery-sugarcubes.jpg" alt="">
         </figure>
     </main>
     <!-- Fin Main -->
@@ -179,16 +182,16 @@
         <figure class="logo">
             <img class="logo__img" src="./assets/logo.svg" alt="">
         </figure>
-        <section class="section" >
+        <section class="section">
             <article class="article">
                 <ul class="menu">
                     <li class="menu__item
-                        <a class=" menu__item--link" ref="#URI--About">
+                        <a class=" menu__item--link" href="#URI--About">
                         About
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__item--link" ref="#URI--Services">
+                        <a class="menu__item--link" href="#URI--Services">
                             Services
                         </a>
                     </li>
@@ -200,37 +203,37 @@
                 </ul>
             </article>
         </section>
-        <section class="section" >
-            <article class="article" >
-                <ul class="menu" >
+        <section class="section">
+            <article class="article">
+                <ul class="menu">
                     <li class="menu__item">
                         <a class="menu__item--link" href="https://www.facebook.com/" target="_blank">
-                            <figure class="figure" >
-                                <img class="figure--img" src="./assets/icon-facebook.svg"
+                            <figure width="32px" height="32px">
+                                <img class="figure--img" width="28px" height="28px" src="./assets/icon-facebook.svg"
                                     alt="Logo red social : Facebook. Seguinos en Facebook!">
                             </figure>
                         </a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__item--link" ref="https://www.instagram.com/" target="_blank">
-                            <figure class="figure" >
-                                <img class="figure--img" src="./assets/icon-instagram.svg"
+                            <figure width="32px" height="32px">
+                                <img class="figure--img" width="28px" height="28px" src="./assets/icon-instagram.svg"
                                     alt="Logo red social : Instagram. Seguinos en Instagram">
                             </figure>
                         </a>
                     </li>
-                    <li class="menu__item" >
+                    <li class="menu__item">
                         <a class="menu__item--link" href="https://www.twitter.com/" target="_blank">
-                            <figure class="figure" >
-                                <img class="figure--img" src="./assets/icon-twitter.svg"
+                            <figure width="32px" height="32px">
+                                <img class="figure--img" width="28px" height="28px" src="./assets/icon-twitter.svg"
                                     alt="Logo red social : Twitter. Seguinos en Twitter!">
                             </figure>
                         </a>
                     </li>
-                    <li class="menu__item" >
+                    <li class="menu__item">
                         <a class="menu__item--link" href="https://www.pinterest.com/" target="_blank">
-                            <figure>
-                                <img class="figure--img" src="./assets/icon-pinterest.svg"
+                            <figure width="32px" height="32px">
+                                <img class="figure--img" width="28px" height="28px" src="./assets/icon-pinterest.svg"
                                     alt="Logo red social : Pinterest. Seguinos en Pinterest!">
                             </figure>
                         </a>

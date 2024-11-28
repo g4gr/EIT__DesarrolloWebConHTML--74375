@@ -1,8 +1,32 @@
 @charset 'UTF-8' ;
 
+:root {
+    /* - Layout - */
+    --l_maxWidth : 1400px ;
+    --l_Header : 80vh ;
+    --l_Header--Navbar : 96px ;
+    --l_Main : auto ;
+    --l_Footer : 350px ;
+
+    /* - Fonts -*/
+    --f_fontSize : 16px ;
+    --f_lineHeight : 1.5 ;
+    --f_fontWeight : 400 ;
+    --f_fontStyle : normal ;
+
+    /* - Colors - */
+    --c_white : #FFF ;
+    --c_black : #000 ;
+
+    --c_green300 : #90D4C5 ;
+    --c_green500 : #2D7464 ;
+
+    --c_yellow500 : #FFD302 ;
+}
+
 /* --- CSS --- */
 html {
-    outline : 1px dotted red ;
+    font-size : var( --f_fontSize ) ;
 
 }
 
@@ -11,16 +35,57 @@ html {
     margin : 0 ;
     padding : 0 ;
     box-sizing : border-box ;
+    outline : 1px dashed red ;
+}
+
+button { all : unset ; }
+
+p , dd { max-width: 42ch; }
+
+img {
+    height: auto ;
+    max-width : 100% ;
+    max-inline-size: 100% ;
+    block-size: auto ;
+    object-fit: cover ;
+    object-position: 50% 50%;
+}
+
+/* --- Body --- */
+.Body {
+    margin : 0 auto ;
+    max-width: var( --l_maxWidth );
+
+    font-size: clamp( 100% , 1rem + .5vw , 25px );
+    line-height: var( --f_lineHeight );
+    font-weight: var( --f_fontWeight );
+    font-style: var(--f_fontStyle);
+
+    background-color: var( --c_black );
 }
 
 /* --- Header --- */
 
 .Header {
+    min-height : var( --l_Header ) ;
+
+    background-image: url( './assets/desktop/image-header.jpg' );
+    background-size: cover ;
+    background-position: center ;
+    background-repeat: no-repeat ;
+
+    color : var( --c_white ) ;
 
     & .navbar {
-        height : 128px ;
+        height : var( --l_Header--Navbar ) ;
+        padding : 0 1rem ;
 
-        background-color : aqua ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap : 0 ;
+
 
         & .logo {
 
@@ -30,21 +95,42 @@ html {
         }
 
         & .menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap : 2rem ;
 
             & .menu__item {
+                list-style-type: none ;
 
                 & .menu__item--link {
+                    color : var( --c_white ) ;
                     text-decoration: none ;
                 }
             }
         }
 
-        & .btn--action {}
+        & .btn--action {
+            padding : .5rem 2rem ;
+
+            border : 2rem ;
+            border-radius: 2rem;
+
+            color : var( --c_black );
+            background-color: var( --c_white );
+        }
     }
 
     & .Hero {
+        height : 100% ;
 
-        & .Hero--title {}
+        h1 { font-size : 2.5rem ; }
+        text-align: center ;
+
+        & .Hero--title {
+            margin : 4rem 0 ;
+        }
 
         & .Hero--figure {
 
@@ -65,29 +151,78 @@ html {
 
 /* --- Main --- */
 .Main {
+    height: var(--l_Main) ;
+
+    display: flex;
+    flex-flow: row nowrap ;
+    gap : 4rem ;
+
+    background-color: var(--c_white) ;
 
     & .section {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0 ;
+        
+        & h2 { font-size : 2rem ; }
+        & h3 { font-size : 1.5rem ; }
+        & h4 { font-size : 1.25rem ; }
 
         & .article {
+            display: contents;
+
+            & .container:nth-child(3){
+                background-image: url('./assets/desktop/image-graphic-design.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            & .container:nth-child(4){
+                background-image: url('./assets/desktop/image-photography.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
 
             & .container {
+                display: flex;
+                flex-direction: column;
 
                 & .title {}
 
                 & .paragraph {}
 
-                & .link {}
+                & .link {
+                    color : var( --c_black ) ;
+                    text-decoration: none ;
+                    font-weight: 700 ;
+                    text-transform: uppercase ;
+
+                    text-shadow: 5px 5px var( --c_yellow );
+                    box-shadow : 5px 0 var( --c_yellow ) ;
+                }
 
                 & .card {
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
 
                     & .card__avatar {
 
-                        & .card__avatar--img {}
+                        & .card__avatar--img {
+                            border-radius : 50% ;
+                        }
                     }
 
                     & .card__paragraph {}
 
                     & .card__person {
+                        display: contents;
 
                         & .card__person--name {}
 
@@ -104,6 +239,8 @@ html {
     }
 
     & .gallery {
+        display: flex;
+        flex-flow: row wrap;
 
         & .galerry--img {}
     }
@@ -111,6 +248,17 @@ html {
 
 /* --- Footer --- */
 .Footer {
+    height : var( --l_Footer ) ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem ;
+
+    background-color: var( --c_green300 );
+
+    color : var( --c_green500 );
 
     & .logo {
 
@@ -122,10 +270,19 @@ html {
         & .article {
 
             & .menu {
+                display: inline-flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap : 1rem ;
 
                 & .menu__item {
+                    list-style-type: none;
 
                     & .menu__item--link {
+                        color : var( --c_green500 ) ;
+                        text-decoration: none ;
+                    }
 
                         & .figure {
 
@@ -137,3 +294,12 @@ html {
         }
     }
 }
+
+/* --- MediaQuery --- */
+
+@media screen and ( 320px <= width <= 768px ){
+    .Main {
+        flex-direction : column;
+        background-color: red ;
+    }
+}:where
